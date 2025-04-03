@@ -28,6 +28,7 @@ namespace Lab_Repaso_2
         }
 
 
+
         private void NIT_Click(object sender, EventArgs e)
         {
 
@@ -65,6 +66,7 @@ namespace Lab_Repaso_2
             txtNit.Clear();
             txtNombre.Clear();
             txtDireccion.Clear();
+
 
         }
 

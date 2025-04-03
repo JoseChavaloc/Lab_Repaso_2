@@ -37,5 +37,10 @@ namespace Lab_Repaso_2
             formAlquiler.Show();
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

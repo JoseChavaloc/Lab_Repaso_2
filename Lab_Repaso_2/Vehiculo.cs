@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab_Repaso_2
 {
-    class Vehiculo
+    internal class Vehiculo
     {
+        public string placa { get; set; }
+        public string marca { get; set; }
+        public int modelo { get; set; }
+        public string color { get; set; }
+        public decimal precio_kilometro { get; set; }
     }
 }

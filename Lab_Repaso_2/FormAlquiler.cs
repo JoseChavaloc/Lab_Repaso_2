@@ -69,10 +69,12 @@ namespace Lab_Repaso_2
                 }
             }
 
+
         }
 
         private void FormAlquiler_Load(object sender, EventArgs e)
         {
+
             ClienteArchivo clienteArchivo = new ClienteArchivo();
             clientes = clienteArchivo.Leer("../../Clientes.json");
 
@@ -85,6 +87,7 @@ namespace Lab_Repaso_2
 
             cmbPlaca.DisplayMember = "placa";
             cmbPlaca.DataSource = vehiculos;
+
 
         }
     }

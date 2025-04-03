@@ -136,6 +136,7 @@
             this.btnAgregarVehi.TabIndex = 10;
             this.btnAgregarVehi.Text = "REGISTRAR VEHICULO";
             this.btnAgregarVehi.UseVisualStyleBackColor = true;
+            this.btnAgregarVehi.Click += new System.EventHandler(this.btnAgregarVehi_Click);
             // 
             // btnClientes
             // 
@@ -145,6 +146,7 @@
             this.btnClientes.TabIndex = 11;
             this.btnClientes.Text = "IR A CLIENTES";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnAlquiler
             // 
@@ -154,6 +156,7 @@
             this.btnAlquiler.TabIndex = 12;
             this.btnAlquiler.Text = "INGRESAR ALQUILER";
             this.btnAlquiler.UseVisualStyleBackColor = true;
+            this.btnAlquiler.Click += new System.EventHandler(this.btnAlquiler_Click);
             // 
             // dataGridView1
             // 
@@ -173,6 +176,7 @@
             this.btnActualizar.TabIndex = 14;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCerrar
             // 
@@ -182,6 +186,7 @@
             this.btnCerrar.TabIndex = 15;
             this.btnCerrar.Text = "CERRAR";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FormVehiculos
             // 
@@ -206,6 +211,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormVehiculos";
             this.Text = "FormVehiculos";
+            this.Load += new System.EventHandler(this.FormVehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
