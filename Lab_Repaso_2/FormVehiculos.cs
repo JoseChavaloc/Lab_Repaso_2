@@ -16,5 +16,10 @@ namespace Lab_Repaso_2
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

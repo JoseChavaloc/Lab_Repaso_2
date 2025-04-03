@@ -12,9 +12,98 @@ namespace Lab_Repaso_2
 {
     public partial class FormClientes: Form
     {
+        List<Cliente> clientes = new List<Cliente>();
         public FormClientes()
         {
             InitializeComponent();
+        }
+        private void Mostrar()
+        {
+            ClienteArchivo clienteArchivo = new ClienteArchivo();
+            clientes = clienteArchivo.Leer("../../Clientes.json");
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = clientes;
+            dataGridView1.Refresh();
+        }
+
+
+        private void NIT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+
+            cliente.nit = txtNit.Text;
+            cliente.nombre = txtNombre.Text;
+            cliente.direccion = txtDireccion.Text;
+
+            clientes.Add(cliente);
+
+            ClienteArchivo clienteArchivo = new ClienteArchivo();
+
+            clienteArchivo.Guardar("../../Clientes.json", clientes);
+
+            txtNit.Clear();
+            txtNombre.Clear();
+            txtDireccion.Clear();
+
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar();
+
+        }
+
+        private void btnVehiculo_Click(object sender, EventArgs e)
+        {
+            FormVehiculos formVehiculos = new FormVehiculos();
+            formVehiculos.Show();
+            this.Close();
+
+        }
+
+        private void btnAlquiler_Click(object sender, EventArgs e)
+        {
+            FormAlquiler formAlquiler = new FormAlquiler();
+            formAlquiler.Show();
+            this.Close();
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FormClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -96,6 +96,7 @@
             this.cmbNIT.Name = "cmbNIT";
             this.cmbNIT.Size = new System.Drawing.Size(121, 24);
             this.cmbNIT.TabIndex = 5;
+            this.cmbNIT.SelectedIndexChanged += new System.EventHandler(this.cmbNIT_SelectedIndexChanged);
             // 
             // cmbPlaca
             // 
@@ -104,6 +105,7 @@
             this.cmbPlaca.Name = "cmbPlaca";
             this.cmbPlaca.Size = new System.Drawing.Size(121, 24);
             this.cmbPlaca.TabIndex = 6;
+            this.cmbPlaca.SelectedIndexChanged += new System.EventHandler(this.cmbPlaca_SelectedIndexChanged);
             // 
             // dateTimePickerAlquiler
             // 
@@ -125,6 +127,7 @@
             this.txtKmRecorridos.Name = "txtKmRecorridos";
             this.txtKmRecorridos.Size = new System.Drawing.Size(133, 22);
             this.txtKmRecorridos.TabIndex = 9;
+            this.txtKmRecorridos.TextChanged += new System.EventHandler(this.txtKmRecorridos_TextChanged);
             // 
             // button1
             // 
@@ -134,6 +137,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "REGISTAR ALQUILER";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -174,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormAlquiler";
             this.Text = "FormAlquiler";
+            this.Load += new System.EventHandler(this.FormAlquiler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
